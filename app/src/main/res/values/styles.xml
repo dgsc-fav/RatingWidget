@@ -9,14 +9,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-    <style name="RatingWidgetProgress"
-        parent="Widget.AppCompat.ProgressBar.Horizontal">
-        <item name="android:indeterminate">false</item>
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/rating_widget_progress</item>
-    </style>
-
     <style name="RatingWidgetText">
         <item name="android:fontFamily">@font/vert_norm_horiz_condensed</item>
         <item name="android:layout_gravity">center</item>

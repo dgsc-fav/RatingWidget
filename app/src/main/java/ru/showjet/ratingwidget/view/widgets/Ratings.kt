@@ -64,7 +64,8 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
         val paddedWidth = right - left
 
         // autosize space between ratings
-        val spaceHeight = paddedWidth.toFloat() / 3f
+        val spaceScale = 3f
+        val spaceHeight = paddedWidth.toFloat() / spaceScale
         space.updateLayoutParams {
             height = spaceHeight.toInt()
         }
@@ -168,7 +169,8 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
         val paddedWidth = right - left
 
         // autosize textView
-        val textSize = paddedWidth.toFloat() / 3.1f
+        val textSizeScale = 3.1f
+        val textSize = paddedWidth.toFloat() / textSizeScale
 
         ratingValue.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
         ratingSource.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
@@ -223,9 +225,6 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
         invalidate()
     }
 
-    // for autosizing
-    private val progressStrokeWidthScale = 22f
-
     private var progress: Float = 0.0f
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -239,6 +238,8 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
             return
         }
 
+        // for autosizing
+        val progressStrokeWidthScale = 22f
         val progressStrokeWidth = (width0 - paddingLeft.toFloat() - paddingRight.toFloat()) / progressStrokeWidthScale
         val halfOfProgressStrokeWidth = progressStrokeWidth / 2
         val quartOfProgressStrokeWidth = progressStrokeWidth / 4
