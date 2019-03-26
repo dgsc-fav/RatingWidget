@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="Ratings">
+        <attr name="ratingsBackgroundColor"
+            format="reference|color" />
+
+    </declare-styleable>
+
     <declare-styleable name="Rating">
+        <attr name="ratingBackgroundColor"
+            format="reference|color" />
+        <attr name="ratingProgressBackgroundColor"
+            format="reference|color" />
+        <attr name="ratingProgressProgressColor"
+            format="reference|color" />
+        <attr name="ratingTextColor"
+            format="reference|color" />
         <attr name="ratingValue"
             format="float" />
         <attr name="ratingSource"
             format="reference|string" />
+
     </declare-styleable>
 </resources>

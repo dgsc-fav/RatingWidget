@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rating_widget_background"
+    android:orientation="vertical">
+
+    <ru.showjet.ratingwidget.view.widgets.Rating
+        android:id="@+id/rating_widget_imdb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:ratingBackgroundColor="@color/rating_widget_background"
+        app:ratingProgressBackgroundColor="@color/rating_widget_progress_color_background"
+        app:ratingProgressProgressColor="@color/rating_widget_progress_color_progress"
+        app:ratingTextColor="@color/rating_widget_text_color"
+        app:ratingSource="@string/widget_rating_source_imdb"
+        app:ratingValue="0.0"
+    />
+
+    <View
+        android:id="@+id/space_view"
+        android:layout_width="1dp"
+        android:layout_height="0dp" />
+
+    <ru.showjet.ratingwidget.view.widgets.Rating
+        android:id="@+id/rating_widget_kp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:ratingSource="@string/widget_rating_source_kp"
+        app:ratingValue="0.0"
+    />
+
+</LinearLayout>

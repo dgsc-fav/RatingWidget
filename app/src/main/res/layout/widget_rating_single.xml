@@ -5,22 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/rating_widget_background">
+    tools:background="@color/rating_widget_background">
 
-    <FrameLayout android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ProgressBar
-            android:id="@+id/rating_progress"
-            style="@style/RatingWidgetProgress"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="0dp"
-            android:max="100"
-            android:padding="0dp"
-            android:progress="81"
-        />
-    </FrameLayout>
-
+    <ru.showjet.ratingwidget.view.widgets.RatingProgress
+        android:id="@+id/rating_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +25,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="8.1"
             tools:text="8.1"
         />
 
@@ -45,11 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="IMDB"
             tools:text="IMDB"
         />
 
     </LinearLayout>
-
 </FrameLayout>
 

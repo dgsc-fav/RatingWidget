@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RatingWidget</string>
+    <string name="widget_rating_source_imdb">IMDB</string>
+    <string name="widget_rating_source_kp">КП</string>
 </resources>

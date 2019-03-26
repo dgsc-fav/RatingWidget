@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="ratings_background">#FF4A4A4A</color>
+    <color name="ratings_medium_background">#580E0E</color>
+    <color name="ratings_small_background">#266AA7</color>
 
-    <color name="rating_widget_background">#42121B31</color>
+    <color name="rating_widget_background">#FF4A4A4A</color>
     <color name="rating_widget_progress_color_progress">#FFFFFFFF</color>
     <color name="rating_widget_progress_color_background">@android:color/transparent</color>
     <color name="rating_widget_text_color">#FFFFFFFF</color>
